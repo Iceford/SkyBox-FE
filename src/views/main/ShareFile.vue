@@ -150,7 +150,7 @@ defineExpose({show});
 
 const copy = async () => {
   await toClipboard(
-      `链接:${shareUrl.value}${resultInfo.value.shareId} 提取码: ${resultInfo.value.code}`
+      `链接: ${shareUrl.value}${resultInfo.value.shareId} \n提取码: ${resultInfo.value.code}`
   );
   proxy.Message.success("复制成功");
 };
